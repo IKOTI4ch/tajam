@@ -23,16 +23,22 @@
     <header>
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-2">
+                <div class="col">
                     <div class="logo d-flex">
                         <img src="img/logo/logo.png" alt="...">
                         <div class="logoText"><a href="#">tajam</a></div>
                     </div>
                 </div>
 
-                <div class="col-7">
+                <div class="col d-lg-none d-md-flex d-none align-items-center justify-content-end">
+                    <button class="btn btn-info myDrop">
+                        <b>Menu</b>
+                    </button>
+                </div>
+
+                <div class="col-lg-7 col-12 d-md-block d-none">
                     <nav class="d-flex justify-content-between">
-                        <div class="navItem"><a href="#">home</a></div>
+                        <div class="navItem"><a href="#logo">home</a></div>
                         <div class="navItem"><a href="#about">about</a></div>
                         <div class="navItem"><a href="#expertise">expertise</a></div>
                         <div class="navItem"><a href="#team">teams</a></div>
@@ -41,21 +47,39 @@
                         <div class="navItem"><a href="#contact">contact</a></div>
                     </nav>
                 </div>
+
+                <div class="col d-flex d-md-none align-items-center justify-content-end">
+                    <div class="dropdown">
+                        <a class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <b>Menu</b>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#logo">home</a></li>
+                            <li><a class="dropdown-item" href="#about">about</a></li>
+                            <li><a class="dropdown-item" href="#expertise">expertise</a></li>
+                            <li><a class="dropdown-item" href="#team">teams</a></li>
+                            <li><a class="dropdown-item" href="#work">works</a></li>
+                            <li><a class="dropdown-item" href="#say">people say</a></li>
+                            <li><a class="dropdown-item" href="#contact">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <main>
+    <main id="logo">
         <div class="container position-relative mainConteiner">
             <div class="mainSlider">
                 <div class="mainSliderItem position-relative">
                     <div class="row justify-content-center text-center">
-                        <div class="col-8">
+                        <div class="col-md-8 col-12">
                             <div class="contentTitle">We Are Awesome Creative Agency</div>
                         </div>
                     </div>
                     <div class="row justify-content-center text-center">
-                        <div class="col-8">
+                        <div class="col-lg-8 col-md-10 col-12">
                             <div class="contentText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
                                 velit
                                 auctor
@@ -70,12 +94,12 @@
 
                 <div class="mainSliderItem position-relative">
                     <div class="row justify-content-center text-center">
-                        <div class="col-8">
+                        <div class="col-md-8 col-12">
                             <div class="contentTitle">We Are Awesome Creative Agency</div>
                         </div>
                     </div>
                     <div class="row justify-content-center text-center">
-                        <div class="col-8">
+                        <div class="col-lg-8 col-md-10 col-12">
                             <div class="contentText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
                                 velit
                                 auctor
@@ -90,12 +114,12 @@
 
                 <div class="mainSliderItem position-relative">
                     <div class="row justify-content-center text-center">
-                        <div class="col-8">
+                        <div class="col-md-8 col-12">
                             <div class="contentTitle">We Are Awesome Creative Agency</div>
                         </div>
                     </div>
                     <div class="row justify-content-center text-center">
-                        <div class="col-8">
+                        <div class="col-lg-8 col-md-10 col-12">
                             <div class="contentText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
                                 velit
                                 auctor
@@ -110,12 +134,12 @@
 
                 <div class="mainSliderItem position-relative">
                     <div class="row justify-content-center text-center">
-                        <div class="col-8">
+                        <div class="col-md-8 col-12">
                             <div class="contentTitle">We Are Awesome Creative Agency</div>
                         </div>
                     </div>
                     <div class="row justify-content-center text-center">
-                        <div class="col-8">
+                        <div class="col-lg-8 col-md-10 col-12">
                             <div class="contentText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
                                 velit
                                 auctor
@@ -137,9 +161,10 @@
 
     <section id="about" class="containerAll m-0">
         <div class="container">
-            <div class="row">
-                <div class="col-3 offset-1"><img src="img/section/icon-1.jpg" alt="..."></div>
-                <div class="col-7 offset-1">
+            <div class="row justify-content-between d-sm-flex d-none">
+                <div class="col-lg-3 offset-lg-1 col-6 d-flex align-items-center"><img src="img/section/icon-1.jpg"
+                        alt="..."></div>
+                <div class="col-lg-7 offset-lg-1 col-6">
                     <div class="row">
                         <div class="titleAll">our story</div>
                     </div>
@@ -158,6 +183,31 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row d-sm-none d-flex">
+                <div class="row text-center">
+                    <div class="titleAll">our story</div>
+                </div>
+
+                <div class="col-12">
+                    <p class="aboutText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                        velit
+                        auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                        ipsum,
+                        nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
+                </div>
+            </div>
+
+            <div class="row mt-3 d-sm-none d-flex">
+                <div class="col-12">
+                    <p class="aboutText">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
+                        ornare
+                        odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti
+                        sociosqu ad
+                        litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                </div>
+            </div>
+
             <div class="row text-center buttonAll">
                 <div class="col"><a href="#">learn more</a></div>
             </div>
@@ -170,15 +220,15 @@
                 <video class="videoCheck" src="video/video.mp4" controls muted loop></video>
             </div>
 
-            <div class="mainVideoButton">
+            <!--<div class="mainVideoButton">
                 <div class="videoButton">
                     <i class="fas fa-play"></i>
                 </div>
-            </div>
+            </div>-->
         </div>
     </section>
 
-    <section id="expertise" class="containerAll m-0">
+    <section id="expertise" class="containerAll expertiseContainer m-0">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="titleAll">expertise</div>
@@ -187,56 +237,132 @@
                 <div class="titleAllSub titleAllSubAfter">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
             </div>
 
-            <div class="row text-center expertiseItemBorder">
-                <div class="col-4 expertiseItem">
+            <div class="row text-center d-sm-flex d-none">
+                <div class="col-md-4 col-6 expertiseItem">
                     <div>
-                        <div class="experiseIcon"><img src="img/icon/icon-1.jpg" alt="..."></div>
+                        <div class="expertiseIcon"><img src="img/icon/icon-1.jpg" alt="..."></div>
                         <div class="expertiseTitle">WEB DESIGN & DEVELOPMENT</div>
                         <div class="expertiseText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
                             velit auctor aliquet Aenean.</div>
                     </div>
                 </div>
-                <div class="col-4 expertiseItem">
+                <div class="col-md-4 col-6 expertiseItem">
                     <div>
-                        <div class="experiseIcon"><img src="img/icon/icon-2.jpg" alt="..."></div>
-                        <div class="expertiseTitle">BRANDING IDENTITY</div>
+                        <div class="expertiseIcon"><img src="img/icon/icon-2.jpg" alt="..."></div>
+                        <div class="expertiseTitle adaptiveTitle">BRANDING IDENTITY</div>
                         <div class="expertiseText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
                             velit auctor aliquet Aenean.</div>
                     </div>
                 </div>
-                <div class="col-4 expertiseItem expertiseItemBorderNone">
+                <div class="col-md-4 col-6 expertiseItem">
                     <div>
-                        <div class="experiseIcon"><img src="img/icon/icon-3.jpg" alt="..."></div>
-                        <div class="expertiseTitle">MOBILE APP</div>
+                        <div class="expertiseIcon"><img src="img/icon/icon-3.jpg" alt="..."></div>
+                        <div class="expertiseTitle adaptiveTitleApp">MOBILE APP</div>
+                        <div class="expertiseText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                            velit auctor aliquet Aenean.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-6 expertiseItem">
+                    <div>
+                        <div class="expertiseIcon"><img src="img/icon/icon-4.jpg" alt="..."></div>
+                        <div class="expertiseTitle">SEARCH ENGINE OPTIMIZATION</div>
+                        <div class="expertiseText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                            velit auctor aliquet Aenean.</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 expertiseItem">
+                    <div>
+                        <div class="expertiseIcon"><img src="img/icon/icon-5.jpg" alt="..."></div>
+                        <div class="expertiseTitle adaptiveTitle">GAME DEVELOPMENT</div>
+                        <div class="expertiseText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+                            velit auctor aliquet Aenean.</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 expertiseItem">
+                    <div>
+                        <div class="expertiseIcon"><img src="img/icon/icon-6.jpg" alt="..."></div>
+                        <div class="expertiseTitle adaptiveTitle">MADE WITH LOVE</div>
                         <div class="expertiseText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
                             velit auctor aliquet Aenean.</div>
                     </div>
                 </div>
             </div>
 
-            <div class="row text-center">
-                <div class="col-4 expertiseItem">
-                    <div>
-                        <div class="experiseIcon"><img src="img/icon/icon-4.jpg" alt="..."></div>
-                        <div class="expertiseTitle">SEARCH ENGINE OPTIMIZATION</div>
-                        <div class="expertiseText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
-                            velit auctor aliquet Aenean.</div>
-                    </div>
-                </div>
-                <div class="col-4 expertiseItem">
-                    <div>
-                        <div class="experiseIcon"><img src="img/icon/icon-5.jpg" alt="..."></div>
-                        <div class="expertiseTitle">GAME DEVELOPMENT</div>
-                        <div class="expertiseText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
-                            velit auctor aliquet Aenean.</div>
-                    </div>
-                </div>
-                <div class="col-4 expertiseItem expertiseItemBorderNone">
-                    <div>
-                        <div class="experiseIcon"><img src="img/icon/icon-6.jpg" alt="..."></div>
-                        <div class="expertiseTitle">MADE WITH LOVE</div>
-                        <div class="expertiseText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
-                            velit auctor aliquet Aenean.</div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="expertiseSlider">
+                        <div class="expertiseItem">
+                            <div class="text-center">
+                                <div class="expertiseIcon d-flex justify-content-center"><img src="img/icon/icon-1.jpg"
+                                        alt="..."></div>
+                                <div class="expertiseTitle">WEB DESIGN & DEVELOPMENT</div>
+                                <div class="expertiseText">This is Photoshop's version of Lorem Ipsum. Proin gravida
+                                    nibh
+                                    vel
+                                    velit auctor aliquet Aenean.</div>
+                            </div>
+                        </div>
+
+                        <div class="expertiseItem">
+                            <div class="text-center">
+                                <div class="expertiseIcon d-flex justify-content-center"><img src="img/icon/icon-2.jpg"
+                                        alt="..."></div>
+                                <div class="expertiseTitle adaptiveTitle">BRANDING IDENTITY</div>
+                                <div class="expertiseText">This is Photoshop's version of Lorem Ipsum. Proin gravida
+                                    nibh
+                                    vel
+                                    velit auctor aliquet Aenean.</div>
+                            </div>
+                        </div>
+
+                        <div class="expertiseItem">
+                            <div class="text-center">
+                                <div class="expertiseIcon d-flex justify-content-center"><img src="img/icon/icon-3.jpg"
+                                        alt="..."></div>
+                                <div class="expertiseTitle adaptiveTitleApp">MOBILE APP</div>
+                                <div class="expertiseText">This is Photoshop's version of Lorem Ipsum. Proin gravida
+                                    nibh
+                                    vel
+                                    velit auctor aliquet Aenean.</div>
+                            </div>
+                        </div>
+
+                        <div class="expertiseItem">
+                            <div class="text-center">
+                                <div class="expertiseIcon d-flex justify-content-center"><img src="img/icon/icon-4.jpg"
+                                        alt="..."></div>
+                                <div class="expertiseTitle">SEARCH ENGINE OPTIMIZATION</div>
+                                <div class="expertiseText">This is Photoshop's version of Lorem Ipsum. Proin gravida
+                                    nibh
+                                    vel
+                                    velit auctor aliquet Aenean.</div>
+                            </div>
+                        </div>
+
+                        <div class="expertiseItem">
+                            <div class="text-center">
+                                <div class="expertiseIcon d-flex justify-content-center"><img src="img/icon/icon-5.jpg"
+                                        alt="..."></div>
+                                <div class="expertiseTitle adaptiveTitle">GAME DEVELOPMENT</div>
+                                <div class="expertiseText">This is Photoshop's version of Lorem Ipsum. Proin gravida
+                                    nibh
+                                    vel
+                                    velit auctor aliquet Aenean.</div>
+                            </div>
+                        </div>
+
+                        <div class="expertiseItem">
+                            <div class="text-center">
+                                <div class="expertiseIcon d-flex justify-content-center"><img src="img/icon/icon-6.jpg"
+                                        alt="..."></div>
+                                <div class="expertiseTitle adaptiveTitle">MADE WITH LOVE</div>
+                                <div class="expertiseText">This is Photoshop's version of Lorem Ipsum. Proin gravida
+                                    nibh
+                                    vel
+                                    velit auctor aliquet Aenean.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -253,8 +379,8 @@
                     velit</div>
             </div>
 
-            <div class="row mt-4 mb-5">
-                <div class="col-3">
+            <div class="row mt-4 mb-5 d-sm-flex d-none">
+                <div class="col-lg-3 col-6 mb-4">
                     <div class="teamItem">
                         <div class="teamImg"><img src="img/team/team.jpg" alt="..."></div>
                         <div class="teamText">
@@ -263,7 +389,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-6 mb-4">
                     <div class="teamItem">
                         <div class="teamImg"><img src="img/team/team.jpg" alt="..."></div>
                         <div class="teamText">
@@ -272,7 +398,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-6">
                     <div class="teamItem">
                         <div class="teamImg"><img src="img/team/team.jpg" alt="..."></div>
                         <div class="teamText">
@@ -281,7 +407,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-6">
                     <div class="teamItem">
                         <div class="teamImg"><img src="img/team/team.jpg" alt="..."></div>
                         <div class="teamText">
@@ -292,7 +418,55 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center">Become part of our dream team, let’s join us ! </div>
+            <div class="row d-sm-none d-flex">
+                <div class="col">
+                    <div class="teamSlider">
+                        <div class="teamSliderItem">
+                            <div class="teamItem">
+                                <div class="teamImg"><img src="img/team/team.jpg" alt="..."></div>
+                                <div class="teamText">
+                                    <div class="teamName"><span>SEMF UCUK</span></div>
+                                    <div class="teamJob"><span>CEO & FOUNDER</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="teamSliderItem">
+                            <div class="teamItem">
+                                <div class="teamImg"><img src="img/team/team.jpg" alt="..."></div>
+                                <div class="teamText">
+                                    <div class="teamName"><span>DIK ADALIN</span></div>
+                                    <div class="teamJob"><span>ENGINEERING</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="teamSliderItem">
+                            <div class="teamItem">
+                                <div class="teamImg"><img src="img/team/team.jpg" alt="..."></div>
+                                <div class="teamText">
+                                    <div class="teamName"><span>JENG KOL</span></div>
+                                    <div class="teamJob"><span>DESIGNER</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="teamSliderItem">
+                            <div class="teamItem">
+                                <div class="teamImg"><img src="img/team/team.jpg" alt="..."></div>
+                                <div class="teamText">
+                                    <div class="teamName"><span>PET ROMAK</span></div>
+                                    <div class="teamJob"><span>ARKETING</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-sm-0 mt-4">
+                <div class="col-sm-12 col-10">Become part of our dream team, let’s join us ! </div>
+            </div>
 
             <div class="row text-center mt-5 pb-5 buttonAll">
                 <div class="col"><a href="#">we are hiring</a></div>
@@ -313,19 +487,66 @@
                 </div>
             </div>
 
+            <div class="row justify-content-center d-md-flex d-none">
+                <div class="workItem"><a class="popupWork" href="http://placehold.it/320x200"><img
+                            src="http://placehold.it/320x200" alt="..."></a></div>
 
-            <div class="row justify-content-center">
-                <div class="workItem"><img src="http://placehold.it/320x200" alt="..."></div>
-                <div class="workItem"><img src="http://placehold.it/320x200" alt="..."></div>
-                <div class="workItem"><img src="http://placehold.it/320x200" alt="..."></div>
-                <div class="workItem"><img src="http://placehold.it/320x200" alt="..."></div>
+                <div class="workItem"><a class="popupWork" href="http://placehold.it/320x200"><img
+                            src="http://placehold.it/320x200" alt="..."></a></div>
+
+                <div class="workItem"><a class="popupWork" href="http://placehold.it/320x200"><img
+                            src="http://placehold.it/320x200" alt="..."></a></div>
+
+                <div class="workItem"><a class="popupWork" href="http://placehold.it/320x200"><img
+                            src="http://placehold.it/320x200" alt="..."></a></div>
+
+                <div class="workItem"><a class="popupWork" href="http://placehold.it/320x200"><img
+                            src="http://placehold.it/320x200" alt="..."></a></div>
+
+                <div class="workItem"><a class="popupWork" href="http://placehold.it/320x200"><img
+                            src="http://placehold.it/320x200" alt="..."></a></div>
+
+                <div class="workItem"><a class="popupWork" href="http://placehold.it/320x200"><img
+                            src="http://placehold.it/320x200" alt="..."></a></div>
+
+                <div class="workItem"><a class="popupWork" href="http://placehold.it/320x200"><img
+                            src="http://placehold.it/320x200" alt="..."></a></div>
             </div>
 
-            <div class="row justify-content-center">
-                <div class="workItem"><img src="http://placehold.it/320x200" alt="..."></div>
-                <div class="workItem"><img src="http://placehold.it/320x200" alt="..."></div>
-                <div class="workItem"><img src="http://placehold.it/320x200" alt="..."></div>
-                <div class="workItem"><img src="http://placehold.it/320x200" alt="..."></div>
+            <div class="row d-md-none d-flex">
+                <div class="workSlider">
+                    <div class="workItem d-flex justify-content-center"><a class="popupWork"
+                            href="http://placehold.it/320x200"><img src="http://placehold.it/320x200" alt="..."></a>
+                    </div>
+
+                    <div class="workItem d-flex justify-content-center"><a class="popupWork"
+                            href="http://placehold.it/320x200"><img src="http://placehold.it/320x200" alt="..."></a>
+                    </div>
+
+                    <div class="workItem d-flex justify-content-center"><a class="popupWork"
+                            href="http://placehold.it/320x200"><img src="http://placehold.it/320x200" alt="..."></a>
+                    </div>
+
+                    <div class="workItem d-flex justify-content-center"><a class="popupWork"
+                            href="http://placehold.it/320x200"><img src="http://placehold.it/320x200" alt="..."></a>
+                    </div>
+
+                    <div class="workItem d-flex justify-content-center"><a class="popupWork"
+                            href="http://placehold.it/320x200"><img src="http://placehold.it/320x200" alt="..."></a>
+                    </div>
+
+                    <div class="workItem d-flex justify-content-center"><a class="popupWork"
+                            href="http://placehold.it/320x200"><img src="http://placehold.it/320x200" alt="..."></a>
+                    </div>
+
+                    <div class="workItem d-flex justify-content-center"><a class="popupWork"
+                            href="http://placehold.it/320x200"><img src="http://placehold.it/320x200" alt="..."></a>
+                    </div>
+
+                    <div class="workItem d-flex justify-content-center"><a class="popupWork"
+                            href="http://placehold.it/320x200"><img src="http://placehold.it/320x200" alt="..."></a>
+                    </div>
+                </div>
             </div>
 
             <div class="row text-center buttonAll mb-5">
@@ -345,7 +566,7 @@
             <div class="sayTextSlider">
                 <div class="sayItem">
                     <div class="row justify-content-center text-center">
-                        <div class="col-8">
+                        <div class="col-lg-8 col-12">
                             <div class="sayText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
                                 velit
                                 auctor
@@ -374,7 +595,7 @@
 
                 <div class="sayItem">
                     <div class="row justify-content-center text-center">
-                        <div class="col-8">
+                        <div class="col-lg-8 col-12">
                             <div class="sayText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
                                 velit
                                 auctor
@@ -403,7 +624,7 @@
 
                 <div class="sayItem">
                     <div class="row justify-content-center text-center">
-                        <div class="col-8">
+                        <div class="col-lg-8 col-12">
                             <div class="sayText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
                                 velit
                                 auctor
@@ -432,7 +653,7 @@
 
                 <div class="sayItem">
                     <div class="row justify-content-center text-center">
-                        <div class="col-8">
+                        <div class="col-lg-8 col-12">
                             <div class="sayText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
                                 velit
                                 auctor
@@ -461,7 +682,7 @@
 
                 <div class="sayItem">
                     <div class="row justify-content-center text-center">
-                        <div class="col-8">
+                        <div class="col-lg-8 col-12">
                             <div class="sayText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
                                 velit
                                 auctor
@@ -490,7 +711,7 @@
 
                 <div class="sayItem">
                     <div class="row justify-content-center text-center">
-                        <div class="col-8">
+                        <div class="col-lg-8 col-12">
                             <div class="sayText">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
                                 velit
                                 auctor
@@ -568,29 +789,37 @@
     <section class="containerAll clientContainer m-0">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-6">
+                <div class="col-md-6 col-12">
                     <div class="row mb-3">
-                        <div class="titleAll clientTitle ps-0">GIVE US A GOOD NEWS</div>
+                        <div class="titleAll clientTitle ps-md-0 text-md-start text-center">GIVE US A GOOD NEWS</div>
                     </div>
                     <form action="#">
-                        <div class="row mb-4"><input placeholder="Name" type="text" maxlength="20"></div>
-                        <div class="row mb-4"><input placeholder="Email" type="text" maxlength="30"></div>
-                        <div class="row mb-4"><input placeholder="Subject" type="text" maxlength="40"></div>
-                        <div class="row mb-4"><textarea placeholder="Your Message" cols="30" rows="10"
-                                maxlength="500"></textarea></div>
+                        <div class="row mb-4">
+                            <div class="col-12"><input placeholder="Name" type="text" maxlength="20"></div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-12"><input placeholder="Email" type="text" maxlength="30"></div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-12"><input placeholder="Subject" type="text" maxlength="40"></div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-12"><textarea placeholder="Your Message" cols="30" rows="10"
+                                    maxlength="500"></textarea></div>
+                        </div>
 
                         <div class="row buttonClient">
-                            <div class="col ps-0"><input value="submit" type="submit"></div>
+                            <div class="col"><input value="submit" type="submit"></div>
                         </div>
                     </form>
                 </div>
 
-                <div class="col-5">
+                <div class="col-lg-5 col-md-6 col-12 mt-md-0 mt-4">
                     <div class="row mb-3">
-                        <div class="titleAll clientTitle ps-0">OUR HAPPY CLIENT</div>
+                        <div class="titleAll clientTitle ps-md-0 text-md-start text-center">OUR HAPPY CLIENT</div>
                     </div>
 
-                    <div class="row mb-5">
+                    <div class="row mb-5 d-md-flex d-none">
                         <div class="col-6">
                             <img src="img/client/client-1.jpg" alt="...">
                         </div>
@@ -598,7 +827,7 @@
                             <img src="img/client/client-2.jpg" alt="...">
                         </div>
                     </div>
-                    <div class="row mb-5">
+                    <div class="row mb-5 d-md-flex d-none">
                         <div class="col-6">
                             <img src="img/client/client-3.jpg" alt="...">
                         </div>
@@ -606,7 +835,7 @@
                             <img src="img/client/client-4.jpg" alt="...">
                         </div>
                     </div>
-                    <div class="row mb-5">
+                    <div class="row mb-5 d-md-flex d-none">
                         <div class="col-6">
                             <img src="img/client/client-5.jpg" alt="...">
                         </div>
@@ -614,7 +843,7 @@
                             <img src="img/client/client-6.jpg" alt="...">
                         </div>
                     </div>
-                    <div class="row mb-5">
+                    <div class="row mb-5 d-md-flex d-none">
                         <div class="col-6">
                             <img src="img/client/client-7.jpg" alt="...">
                         </div>
@@ -622,11 +851,53 @@
                             <img src="img/client/client-8.jpg" alt="...">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-6">
+                    <div class="row d-md-flex d-none">
+                        <div class="col-6 d-flex align-items-end">
                             <img src="img/client/client-9.jpg" alt="...">
                         </div>
                         <div class="col-6">
+                            <img src="img/client/client-10.jpg" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="clientSlider d-md-none d-block">
+                        <div class="clientSliderItem d-flex justify-content-center">
+                            <img src="img/client/client-1.jpg" alt="...">
+                        </div>
+
+                        <div class="clientSliderItem d-flex justify-content-center">
+                            <img src="img/client/client-2.jpg" alt="...">
+                        </div>
+
+                        <div class="clientSliderItem d-flex justify-content-center">
+                            <img src="img/client/client-3.jpg" alt="...">
+                        </div>
+
+                        <div class="clientSliderItem d-flex justify-content-center">
+                            <img src="img/client/client-4.jpg" alt="...">
+                        </div>
+
+                        <div class="clientSliderItem d-flex justify-content-center">
+                            <img src="img/client/client-5.jpg" alt="...">
+                        </div>
+
+                        <div class="clientSliderItem d-flex justify-content-center">
+                            <img src="img/client/client-6.jpg" alt="...">
+                        </div>
+
+                        <div class="clientSliderItem d-flex justify-content-center">
+                            <img src="img/client/client-7.jpg" alt="...">
+                        </div>
+
+                        <div class="clientSliderItem d-flex justify-content-center">
+                            <img src="img/client/client-8.jpg" alt="...">
+                        </div>
+
+                        <div class="clientSliderItem d-flex justify-content-center">
+                            <img src="img/client/client-9.jpg" alt="...">
+                        </div>
+
+                        <div class="clientSliderItem d-flex justify-content-center">
                             <img src="img/client/client-10.jpg" alt="...">
                         </div>
                     </div>
@@ -638,7 +909,7 @@
     <footer id="contact" class="containerAll contactContainer m-0">
         <div class="container position-relative z-index colorWhite">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-6">
                     <div class="row mb-4">
                         <div class="col-2">
                             <div class="logo d-flex">
@@ -656,101 +927,105 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-md-4 col-6">
                     <div class="row mb-4">
                         <div class="contactTitle">
                             our studio
                         </div>
                     </div>
 
-                    <div class="row mb-4">
-                        <div class="col-1 pe-0"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="row mb-lg-4">
+                        <div class="col-1 pe-xl-0"><i class="fas fa-map-marker-alt"></i></div>
 
-                        <div class="col ps-0 contactFirstText">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13,
+                        <div class="col ps-xl-0 pe-2 contactFirstText">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13,
                             Kalideres - Jakarta
                             Barat
                             11480 - Indonesia</div>
                     </div>
 
                     <div class="row">
-                        <div class="col-1 pe-0"><i class="fas fa-phone-alt"></i></div>
+                        <div class="col-1 pe-xl-0"><i class="fas fa-phone-alt"></i></div>
 
-                        <div class="col ps-0">(+62) 21-2224 3333</div>
+                        <div class="col ps-xl-0">(+62) 21-2224 3333</div>
                     </div>
                 </div>
 
-                <div class="col-4">
-                    <div class="row mb-4">
+                <div class="col-md-4 col-12">
+                    <div class="row mb-md-4 mb-3 mt-md-0 mt-4">
                         <div class="contactTitle">
                             stay in touch
                         </div>
                     </div>
 
-                    <div class="row">
-                        <form action="#" class="d-flex">
-                            <input type="email" placeholder="Subscribe our newsletter">
-                            <div class="position-relative">
-                                <input value="." type="submit">
-                                <div class="contactIcon"><i class="far fa-paper-plane"></i></div>
+                    <form action="#">
+                        <div class="row justify-content-between">
+                            <div class="col-9">
+                                <input class="colorWhite" type="email" placeholder="Subscribe our newsletter">
                             </div>
-                        </form>
-                    </div>
+                            <div class="col-3 ps-0">
+                                <div class="position-relative">
+                                    <input value="." type="submit">
+                                    <div class="contactIcon"><i class="far fa-paper-plane"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
 
                     <div class="row mt-4">
-                        <div class="col-1 me-2">
-                            <a href="#">
-                                <div class="moreIcon position-relative">
-                                    <i class="fab fa-facebook-f"></i>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-1 me-2">
-                            <a href="#">
-                                <div class="moreIcon position-relative">
-                                    <i class="fab fa-twitter"></i>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-1 me-2">
-                            <a href="#">
-                                <div class="moreIcon position-relative">
-                                    <i class="fas fa-basketball-ball"></i>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-1 me-2">
-                            <a href="#">
-                                <div class="moreIcon position-relative">
-                                    <i class="fab fa-instagram"></i>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-1 me-2">
-                            <a href="#">
-                                <div class="moreIcon position-relative">
-                                    <i class="fab fa-google"></i>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-1">
-                            <a href="#">
-                                <div class="moreIcon position-relative">
-                                    <i class="fab fa-youtube"></i>
-                                </div>
-                            </a>
+                        <div
+                            class="col d-lg-flex d-md-block d-flex justify-content-lg-start justify-content-md-between justify-content-start">
+                            <div class="d-flex">
+                                <a href="#">
+                                    <div class="moreIcon position-relative">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="moreIcon position-relative">
+                                        <i class="fab fa-twitter"></i>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="moreIcon position-relative">
+                                        <i class="fas fa-basketball-ball"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="d-flex mt-lg-0 mt-md-2 mt-0">
+                                <a href="#">
+                                    <div class="moreIcon position-relative">
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="moreIcon position-relative">
+                                        <i class="fab fa-google"></i>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="moreIcon position-relative">
+                                        <i class="fab fa-youtube"></i>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="row copyright">
-                <div class="col d-flex">
+                <div class="col-md-6 col-12 d-flex justify-content-md-start justify-content-center">
                     <div class="copyrightText me-4"><a href="#">help</a></div>
                     <div class="copyrightText me-4"><a href="#">terms & condition</a></div>
                     <div class="copyrightText"><a href="#">privacy</a></div>
                 </div>
 
-                <div class="col text-end">
+                <div class="col-md-6 text-md-end text-center mt-md-0 mt-4">
                     <div class="copy">Copyright © 2015 - Tajem Creative</div>
                 </div>
             </div>
@@ -761,10 +1036,9 @@
 
     <!--SCRIPTS-->
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
